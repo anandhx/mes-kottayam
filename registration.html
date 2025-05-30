@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - MES GOLDEN JUBILEE COLLEGE KOTTAYAM</title>
+    <meta name="description" content="Apply for admission to MES Golden Jubilee College Kottayam for the academic year 2025-2026">
+    <link rel="shortcut icon" href="images/log.jpg" type="image/x-icon" />
+<style>
+    /* CSS Variables for consistent theming */
+:root {
+    --primary-color: #3B6C92;
+    --secondary-color: #2a5070;
+    --accent-color: #f8f9fa;
+    --text-dark: #333;
+    --text-light: #666;
+    --text-muted: #ACABAB;
+    --white: #ffffff;
+    --off-white: #f8f9fa;
+    --light-gray: #e9ecef;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    --gradient-light: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    --principal-purple: #6B46C1;
+    --principal-gold: #D4AF37;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.text-white { color: var(--white); }
+.mb-30 { margin-bottom: 30px; }
+.mt-30 { margin-top: 30px; }
+.py-60 { padding: 60px 0; }
+.py-80 { padding: 80px 0; }
+
+/* Enhanced Header with Off-White Theme */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(248, 249, 250, 0.95);
+    border-bottom: 1px solid rgba(59, 108, 146, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: var(--transition);
+    height: 85px;
+    backdrop-filter: blur(10px);
+}
+
+.header.scrolled {
+    background: rgba(248, 249, 250, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(59, 108, 146, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    position: relative;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: var(--transition);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+    background: rgba(59, 108, 146, 0.05);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+/* Enhanced Dropdown with Arrow */
+.dropdown-arrow {
+    margin-left: 8px;
+    font-size: 12px;
+    transition: var(--transition);
+    color: var(--primary-color);
+}
+
+.nav-item:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 220px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px) scale(0.95);
+    transition: all 0.4s var(--bounce);
+    border: 1px solid rgba(59, 108, 146, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    background: var(--white);
+    border: 1px solid rgba(59, 108, 146, 0.1);
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(59, 108, 146, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.dropdown-menu a:hover {
+    color: var(--white);
+    padding-left: 30px;
+}
+
+.dropdown-menu a:hover::before {
+    width: 100%;
+}
+
+/* Mobile Menu */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.mobile-toggle:hover {
+    background: rgba(59, 108, 146, 0.1);
+}
+
+.mobile-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 3px 0;
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Registration Page Specific Styles - Clean and Direct */
+.registration-section {
+    margin-top: 85px;
+    background: var(--white);
+    min-height: calc(100vh - 85px);
+}
+
+.registration-header {
+    background: var(--gradient-light);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(59, 108, 146, 0.1);
+}
+
+.registration-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.registration-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.registration-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Clean Form Container - No Padding */
+.form-container {
+    position: relative;
+    width: 100%;
+    background: var(--white);
+    /* Removed all padding and margins */
+}
+
+.form-container iframe {
+    width: 100%;
+    min-height: 100vh;
+    border: none;
+    display: block;
+    /* Removed any margins or padding */
+}
+
+.form-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: opacity 0.5s ease;
+}
+
+.form-loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(59, 108, 146, 0.2);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Information Panel - Floating */
+.info-panel {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: var(--white);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(59, 108, 146, 0.1);
+    max-width: 300px;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+.info-panel.collapsed {
+    transform: translateY(-50%) translateX(calc(100% - 60px));
+}
+
+.info-toggle {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    width: 40px;
+    height: 60px;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.info-toggle:hover {
+    background: var(--secondary-color);
+}
+
+.info-panel h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.info-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-panel li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.info-panel li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.help-contacts {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(59, 108, 146, 0.1);
+}
+
+.help-contacts h4 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+    background: var(--gradient-primary);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll to Top */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+    box-shadow: 0 8px 25px rgba(59, 108, 146, 0.3);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 40px rgba(59, 108, 146, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .info-panel {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 20px;
+        max-width: none;
+    }
+
+    .info-panel.collapsed {
+        transform: none;
+    }
+
+    .info-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 85px);
+        background: var(--off-white);
+        flex-direction: column;
+        padding: 30px 20px;
+        transform: translateX(-100%);
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .registration-title {
+        font-size: 2.2rem;
+    }
+
+    .registration-subtitle {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .form-container iframe {
+        min-height: 120vh; /* Taller for mobile */
+    }
+
+    .info-panel {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .scroll-top {
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-title {
+        font-size: 1.8rem;
+    }
+
+    .registration-subtitle {
+        font-size: 1rem;
+    }
+
+    .form-container iframe {
+        min-height: 140vh; /* Even taller for small screens */
+    }
+
+    .info-panel {
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .info-panel h3 {
+        font-size: 1.1rem;
+    }
+
+    .info-panel li {
+        font-size: 0.85rem;
+    }
+}
+</style>
+
+
+
+
+<style>
+    /* ===================================
+   HEADER & NAVIGATION STYLES
+   =================================== */
+
+/* CSS Variables */
+:root {
+    --primary-color: #3B6C92;
+    --secondary-color: #2a5070;
+    --accent-color: #f8f9fa;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #ffffff;
+    --off-white: #f8f9fa;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Header Container */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(248, 249, 250, 0.95);
+    border-bottom: 1px solid rgba(59, 108, 146, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    transition: var(--transition);
+    height: 85px;
+    backdrop-filter: blur(10px);
+}
+
+.header.scrolled {
+    background: rgba(248, 249, 250, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(59, 108, 146, 0.2);
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Logo Styles */
+.logo img {
+    height: 55px;
+    width: auto;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    position: relative;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: var(--transition);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+    background: rgba(59, 108, 146, 0.05);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    margin-left: 8px;
+    font-size: 12px;
+    transition: var(--transition);
+    color: var(--primary-color);
+}
+
+.nav-item:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px) scale(0.95);
+    transition: all 0.4s var(--bounce);
+    border: 1px solid rgba(59, 108, 146, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    background: var(--white);
+    border: 1px solid rgba(59, 108, 146, 0.1);
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+    border-bottom: 1px solid rgba(59, 108, 146, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.dropdown-menu a:hover {
+    color: var(--white);
+    padding-left: 30px;
+}
+
+.dropdown-menu a:hover::before {
+    width: 100%;
+}
+
+/* Mobile Toggle Button */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.mobile-toggle:hover {
+    background: rgba(59, 108, 146, 0.1);
+}
+
+.mobile-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 3px 0;
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 85px);
+        background: var(--off-white);
+        flex-direction: column;
+        padding: 30px 20px;
+        transform: translateX(-100%);
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(59, 108, 146, 0.1);
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    /* Mobile Dropdown Styles */
+    .dropdown-arrow {
+        display: block !important;
+        font-size: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-item.mobile-dropdown-open .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        background: rgba(59, 108, 146, 0.05);
+        margin-top: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-item.mobile-dropdown-open .dropdown-menu {
+        max-height: 300px;
+    }
+
+    .dropdown-menu::before {
+        display: none;
+    }
+
+    .dropdown-menu a {
+        padding: 15px 30px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(59, 108, 146, 0.1);
+        background: transparent;
+    }
+
+    .dropdown-menu a:hover {
+        background: rgba(59, 108, 146, 0.1);
+        color: var(--primary-color);
+        padding-left: 35px;
+    }
+
+    .dropdown-menu a::before {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+    <!-- Header -->
+   <header class="header" id="header">
+            <div class="container">
+                <div class="nav-container">
+                    <a href="#" class="logo">
+                        <img src="images/log.jpg" alt="MES College Logo">
+                    </a>
+                    
+                    <nav class="nav-menu" id="navMenu">
+                        <div class="nav-item">
+                             <a href="index.html" class="nav-link ">Home</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#about" class="nav-link">
+                                About Us
+                                <span class="dropdown-arrow">▼</span>
+                            </a>
+                             <div class="dropdown-menu">
+                            <a href="mgmnt.html">Management</a>
+                            <a href="index.html#principal">Principal</a>
+                            <a href="index.html#vision">Vision & Mission</a>
+                        </div>
+                        </div>
+
+                        <div class="nav-item">
+                            <a href="department.html" class="nav-link">Department</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="fac.html" class="nav-link">Facilities</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="index.html#gallery" class="nav-link">Gallery</a>
+                        </div>
+
+
+                        <div class="nav-item">
+                             <a href="contact.html" class="nav-link active">Contact</a>
+                  
+                        </div>
+                    </nav>
+                    
+                    <div class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <!-- Header Section -->
+        <div class="registration-header">
+            <div class="container">
+                <h1 class="registration-title">Admission 2025-2026</h1>
+                <p class="registration-subtitle">Complete the application form below to apply for admission to MES Golden Jubilee College Kottayam</p>
+            </div>
+        </div>
+        
+        <!-- Clean Form Container - No Padding -->
+        <div class="form-container">
+            <div class="form-loading" id="formLoading">
+                <div class="spinner"></div>
+                <p>Loading application form...</p>
+            </div>
+            <iframe id="registrationForm" src="https://docs.google.com/forms/d/1oCkHhSP0-fyyAD3cqku4uOtw0XeJWMxcPl_dg8Up2XI/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        
+        <!-- Floating Information Panel -->
+        <div class="info-panel" id="infoPanel">
+           
+            <div class="help-contacts">
+                <h4>Need Help?</h4>
+                <div class="contact-info">
+                    📞 +91 7994072292<br>
+                    ✉️ mescollegekottayam@gmail.com
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="text-center" style="border-top: 1px solid rgba(255,255,255,0.2);">
+            <p>&copy; 2025 MES Golden Jubilee College Kottayam</p>
+        </div>
+    </footer>
+ 
+
+  
+    <script>
+
+        // ===================================
+// HEADER JAVASCRIPT FUNCTIONALITY
+// ===================================
+
+class HeaderController {
+    constructor() {
+        this.header = document.getElementById('header');
+        this.mobileToggle = document.getElementById('mobileToggle');
+        this.navMenu = document.getElementById('navMenu');
+        this.navItems = document.querySelectorAll('.nav-item');
+        this.navLinks = document.querySelectorAll('.nav-link');
+        this.sections = document.querySelectorAll('section[id]');
+        
+        this.isScrolled = false;
+        this.isMobileMenuOpen = false;
+        this.activeDropdown = null;
+        
+        this.init();
+    }
+
+    init() {
+        this.setupScrollEffect();
+        this.setupMobileMenu();
+        this.setupDropdowns();
+        this.setupSmoothScrolling();
+        this.setupActiveNavigation();
+        this.setupResponsiveHandling();
+        this.setupKeyboardNavigation();
+        this.setupClickOutside();
+    }
+
+    // ===================================
+    // SCROLL EFFECTS
+    // ===================================
+    setupScrollEffect() {
+        let ticking = false;
+        
+        const updateHeader = () => {
+            const scrollY = window.pageYOffset;
+            const shouldBeScrolled = scrollY > 100;
+            
+            if (shouldBeScrolled !== this.isScrolled) {
+                this.isScrolled = shouldBeScrolled;
+                
+                if (this.isScrolled) {
+                    this.header.classList.add('scrolled');
+                } else {
+                    this.header.classList.remove('scrolled');
+                }
+            }
+            
+            ticking = false;
+        };
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateHeader);
+                ticking = true;
+            }
+        });
+    }
+
+    // ===================================
+    // MOBILE MENU FUNCTIONALITY
+    // ===================================
+    setupMobileMenu() {
+        if (!this.mobileToggle || !this.navMenu) return;
+
+        this.mobileToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggleMobileMenu();
+        });
+
+        // Close mobile menu when clicking on nav links (except dropdown parents)
+        this.navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (this.isMobile() && !this.hasDropdown(link.parentElement)) {
+                    this.closeMobileMenu();
+                }
+            });
+        });
+    }
+
+    toggleMobileMenu() {
+        this.isMobileMenuOpen = !this.isMobileMenuOpen;
+        
+        this.mobileToggle.classList.toggle('active', this.isMobileMenuOpen);
+        this.navMenu.classList.toggle('active', this.isMobileMenuOpen);
+        
+        // Close all dropdowns when toggling mobile menu
+        this.closeAllDropdowns();
+        
+        // Prevent body scroll when mobile menu is open
+        document.body.style.overflow = this.isMobileMenuOpen ? 'hidden' : '';
+        
+        console.log('Mobile menu toggled:', this.isMobileMenuOpen);
+    }
+
+    closeMobileMenu() {
+        if (this.isMobileMenuOpen) {
+            this.isMobileMenuOpen = false;
+            this.mobileToggle.classList.remove('active');
+            this.navMenu.classList.remove('active');
+            this.closeAllDropdowns();
+            document.body.style.overflow = '';
+            
+            console.log('Mobile menu closed');
+        }
+    }
+
+    // ===================================
+    // DROPDOWN FUNCTIONALITY
+    // ===================================
+    setupDropdowns() {
+        this.navItems.forEach(item => {
+            const dropdownMenu = item.querySelector('.dropdown-menu');
+            const navLink = item.querySelector('.nav-link');
+            
+            if (dropdownMenu && navLink) {
+                this.setupDropdownArrow(navLink);
+                this.setupDropdownEvents(item, navLink, dropdownMenu);
+            }
+        });
+    }
+
+    setupDropdownArrow(navLink) {
+        let dropdownArrow = navLink.querySelector('.dropdown-arrow');
+        
+        if (!dropdownArrow) {
+            dropdownArrow = document.createElement('span');
+            dropdownArrow.className = 'dropdown-arrow';
+            dropdownArrow.innerHTML = '▼';
+            navLink.appendChild(dropdownArrow);
+        }
+    }
+
+    setupDropdownEvents(item, navLink, dropdownMenu) {
+        // Desktop hover events
+        if (!this.isMobile()) {
+            item.addEventListener('mouseenter', () => {
+                if (!this.isMobile()) {
+                    this.openDropdown(item);
+                }
+            });
+
+            item.addEventListener('mouseleave', () => {
+                if (!this.isMobile()) {
+                    this.closeDropdown(item);
+                }
+            });
+        }
+
+        // Mobile/Touch click events
+        navLink.addEventListener('click', (e) => {
+            if (this.isMobile() && this.hasDropdown(item)) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.toggleDropdown(item);
+            }
+        });
+
+        // Dropdown menu item clicks
+        const dropdownLinks = dropdownMenu.querySelectorAll('a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                this.closeAllDropdowns();
+                if (this.isMobile()) {
+                    this.closeMobileMenu();
+                }
+            });
+        });
+    }
+
+    openDropdown(item) {
+        this.closeAllDropdowns();
+        item.classList.add('mobile-dropdown-open');
+        this.activeDropdown = item;
+        
+        console.log('Dropdown opened:', item.querySelector('.nav-link').textContent);
+    }
+
+    closeDropdown(item) {
+        item.classList.remove('mobile-dropdown-open');
+        if (this.activeDropdown === item) {
+            this.activeDropdown = null;
+        }
+        
+        console.log('Dropdown closed:', item.querySelector('.nav-link').textContent);
+    }
+
+    toggleDropdown(item) {
+        const isOpen = item.classList.contains('mobile-dropdown-open');
+        
+        this.closeAllDropdowns();
+        
+        if (!isOpen) {
+            this.openDropdown(item);
+        }
+    }
+
+    closeAllDropdowns() {
+        this.navItems.forEach(item => {
+            item.classList.remove('mobile-dropdown-open');
+        });
+        this.activeDropdown = null;
+    }
+
+    // ===================================
+    // SMOOTH SCROLLING
+    // ===================================
+    setupSmoothScrolling() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                const href = anchor.getAttribute('href');
+                
+                // Skip empty anchors
+                if (href === '#' || href === '#!') return;
+                
+                // Don't prevent default for dropdown parent links in mobile
+                if (this.isMobile() && 
+                    anchor.parentElement.classList.contains('nav-item') && 
+                    this.hasDropdown(anchor.parentElement)) {
+                    return;
+                }
+                
+                e.preventDefault();
+                this.smoothScrollToSection(href);
+            });
+        });
+    }
+
+    smoothScrollToSection(href) {
+        const target = document.querySelector(href);
+        
+        if (target) {
+            // Close mobile menu and dropdowns
+            this.closeMobileMenu();
+            this.closeAllDropdowns();
+            
+            // Calculate offset for fixed header
+            const headerHeight = this.header.offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+            
+            console.log('Smooth scrolling to:', href);
+        }
+    }
+
+    // ===================================
+    // ACTIVE NAVIGATION HIGHLIGHTING
+    // ===================================
+    setupActiveNavigation() {
+        let ticking = false;
+        
+        const updateActiveNav = () => {
+            const scrollY = window.pageYOffset;
+            const headerHeight = this.header.offsetHeight;
+            let current = '';
+            
+            // Find the current section
+            this.sections.forEach(section => {
+                const sectionTop = section.offsetTop - headerHeight - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollY >= sectionTop && scrollY < sectionBottom) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            // Update active states
+            this.navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                
+                if (href === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            ticking = false;
+        };
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateActiveNav);
+                ticking = true;
+            }
+        });
+    }
+
+    // ===================================
+    // RESPONSIVE HANDLING
+    // ===================================
+    setupResponsiveHandling() {
+        let resizeTimeout;
+        
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                this.handleResize();
+            }, 250);
+        });
+    }
+
+    handleResize() {
+        // Close mobile menu and dropdowns on resize
+        if (!this.isMobile()) {
+            this.closeMobileMenu();
+            this.closeAllDropdowns();
+            document.body.style.overflow = '';
+        }
+        
+        console.log('Window resized, mobile:', this.isMobile());
+    }
+
+    // ===================================
+    // KEYBOARD NAVIGATION
+    // ===================================
+    setupKeyboardNavigation() {
+        document.addEventListener('keydown', (e) => {
+            // Escape key closes mobile menu and dropdowns
+            if (e.key === 'Escape') {
+                this.closeMobileMenu();
+                this.closeAllDropdowns();
+            }
+            
+            // Enter key on mobile toggle
+            if (e.key === 'Enter' && e.target === this.mobileToggle) {
+                e.preventDefault();
+                this.toggleMobileMenu();
+            }
+        });
+
+        // Make mobile toggle focusable
+        if (this.mobileToggle) {
+            this.mobileToggle.setAttribute('tabindex', '0');
+            this.mobileToggle.setAttribute('role', 'button');
+            this.mobileToggle.setAttribute('aria-label', 'Toggle navigation menu');
+            this.mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    // ===================================
+    // CLICK OUTSIDE HANDLING
+    // ===================================
+    setupClickOutside() {
+        document.addEventListener('click', (e) => {
+            // Close mobile menu if clicking outside
+            if (this.isMobileMenuOpen && 
+                !this.navMenu.contains(e.target) && 
+                !this.mobileToggle.contains(e.target)) {
+                this.closeMobileMenu();
+            }
+            
+            // Close dropdowns if clicking outside
+            if (this.activeDropdown && 
+                !this.activeDropdown.contains(e.target)) {
+                this.closeAllDropdowns();
+            }
+        });
+    }
+
+    // ===================================
+    // UTILITY METHODS
+    // ===================================
+    isMobile() {
+        return window.innerWidth <= 768;
+    }
+
+    hasDropdown(navItem) {
+        return navItem.querySelector('.dropdown-menu') !== null;
+    }
+
+    // ===================================
+    // PUBLIC API METHODS
+    // ===================================
+    scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    highlightNavItem(sectionId) {
+        this.navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    closeAllMenus() {
+        this.closeMobileMenu();
+        this.closeAllDropdowns();
+    }
+}
+
+// ===================================
+// ADDITIONAL HEADER UTILITIES
+// ===================================
+
+// Header visibility on scroll (hide/show)
+class HeaderVisibility {
+    constructor(header) {
+        this.header = header;
+        this.lastScrollY = 0;
+        this.isVisible = true;
+        this.scrollThreshold = 100;
+        
+        this.init();
+    }
+
+    init() {
+        let ticking = false;
+        
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    this.handleScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
+
+    handleScroll() {
+        const currentScrollY = window.pageYOffset;
+        const scrollingDown = currentScrollY > this.lastScrollY;
+        const scrolledPastThreshold = currentScrollY > this.scrollThreshold;
+
+        if (scrollingDown && scrolledPastThreshold && this.isVisible) {
+            this.hideHeader();
+        } else if (!scrollingDown && !this.isVisible) {
+            this.showHeader();
+        }
+
+        this.lastScrollY = currentScrollY;
+    }
+
+    hideHeader() {
+        this.header.style.transform = 'translateY(-100%)';
+        this.isVisible = false;
+    }
+
+    showHeader() {
+        this.header.style.transform = 'translateY(0)';
+        this.isVisible = true;
+    }
+}
+
+// ===================================
+// INITIALIZATION
+// ===================================
+
+// Initialize header functionality when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Initializing header functionality...');
+    
+    // Main header controller
+    const headerController = new HeaderController();
+    
+    // Optional: Header auto-hide functionality (uncomment to enable)
+    // const headerVisibility = new HeaderVisibility(headerController.header);
+    
+    // Make header controller globally accessible
+    window.headerController = headerController;
+    
+    console.log('Header functionality initialized successfully');
+});
+
+// ===================================
+// GLOBAL HEADER FUNCTIONS
+// ===================================
+
+// Global functions for external use
+function scrollToSection(sectionId) {
+    if (window.headerController) {
+        window.headerController.smoothScrollToSection(`#${sectionId}`);
+    }
+}
+
+function closeHeaderMenus() {
+    if (window.headerController) {
+        window.headerController.closeAllMenus();
+    }
+}
+
+function toggleMobileMenu() {
+    if (window.headerController) {
+        window.headerController.toggleMobileMenu();
+    }
+}
+
+// Export for module systems
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { HeaderController, HeaderVisibility };
+}
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            mobileToggle.addEventListener('click', () => {
+                mobileToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Contact form submission
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+                
+                // Simple validation
+                if (!data.firstName || !data.lastName || !data.email || !data.subject || !data.message) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Simulate form submission
+                const submitBtn = contactForm.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    contactForm.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+
+            // Scroll to top functionality
+            const scrollTop = document.getElementById('scrollTop');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollTop.classList.add('visible');
+                } else {
+                    scrollTop.classList.remove('visible');
+                }
+            });
+
+            // Animate contact cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('.contact-card, .direction-card, .contact-info-section, .contact-form-section').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+        });
+
+        // Scroll to Top Function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            mobileToggle.addEventListener('click', () => {
+                mobileToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Form loading indicator
+            const formLoading = document.getElementById('formLoading');
+            const registrationForm = document.getElementById('registrationForm');
+            
+            registrationForm.onload = function() {
+                setTimeout(() => {
+                    formLoading.classList.add('hidden');
+                }, 1000);
+            };
+
+            // Scroll to top functionality
+            const scrollTop = document.getElementById('scrollTop');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollTop.classList.add('visible');
+                } else {
+                    scrollTop.classList.remove('visible');
+                }
+            });
+
+            // Auto-collapse info panel on mobile
+            if (window.innerWidth <= 1024) {
+                const infoPanel = document.getElementById('infoPanel');
+                infoPanel.classList.remove('collapsed');
+            }
+        });
+
+        // Toggle info panel
+        function toggleInfoPanel() {
+            const infoPanel = document.getElementById('infoPanel');
+            const infoToggle = document.getElementById('infoToggle');
+            
+            infoPanel.classList.toggle('collapsed');
+            infoToggle.textContent = infoPanel.classList.contains('collapsed') ? 'ℹ️' : '✖️';
+        }
+
+        // Scroll to Top Function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
